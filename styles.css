@@ -4,13 +4,13 @@
   --paper-2: #ecebe4;
   --ink: #18181b;
   --muted: #5d635c;
-  --sage: #5d7d68;
-  --sage-700: #496552;
-  --sage-soft: #e7eee9;
+  --sage: #2f6a4a;
+  --sage-700: #23503a;
+  --sage-soft: #e6efe9;
   --lav: #7b6aad;
   --lav-700: #685a9a;
   --lav-soft: #efebf6;
-  --dark: #1e2823;
+  --dark: #1f3d2c;
   --line: #e7e6e0;
   --radius: 18px;
   --radius-lg: 26px;
@@ -238,7 +238,7 @@ form button:hover { background: var(--sage-700); }
 
 .numlist .nrow { display: grid; grid-template-columns: 150px 1fr; gap: 34px; padding: 42px 0; border-top: 1px solid var(--line); align-items: start; }
 .numlist .nrow:last-child { border-bottom: 1px solid var(--line); }
-.numlist .bignum { font-family: "Spectral", serif; font-weight: 400; font-size: clamp(3.2rem, 7vw, 5.4rem); line-height: 0.75; color: #c9d3cb; }
+.numlist .bignum { font-family: "Spectral", serif; font-weight: 400; font-size: clamp(3.2rem, 7vw, 5.4rem); line-height: 0.75; color: #c4dccd; }
 .numlist .ntext h3 { font-family: "Spectral", serif; font-weight: 500; font-size: 1.55rem; margin-bottom: 10px; }
 .numlist .ntext p { color: var(--muted); max-width: 56ch; }
 
@@ -317,6 +317,7 @@ form button:hover { background: var(--sage-700); }
 .photo-ph { width: 150px; aspect-ratio: 1; border-radius: 22px; background: linear-gradient(155deg, var(--paper), var(--lav-soft)); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 18px 40px rgba(24,24,27,0.08); margin-bottom: 30px; }
 .photo-ph .mono { font-family: "Spectral", serif; font-size: 2rem; color: var(--sage); opacity: 0.55; }
 .photo-ph .hint { color: var(--muted); font-size: 0.78rem; }
+.role-line { color: var(--sage); font-weight: 600; font-size: 0.98rem; margin-top: 14px; }
 
 .acc { border-top: 1px solid var(--line); }
 .acc details { border-bottom: 1px solid var(--line); }
