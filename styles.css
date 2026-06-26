@@ -304,13 +304,15 @@ form button:hover { background: var(--sage-700); }
 }
 
 /* ---------- SIMPLE / ACCORDION HOME ---------- */
-.simple { max-width: 768px; margin: 0 auto; padding: 0 28px 70px; }
+.simple { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 clamp(22px, 5vw, 56px) 80px; }
 .simple-top { display: flex; align-items: center; gap: 11px; padding: 32px 0 0; }
 .simple-top svg { width: 22px; height: 28px; }
 .simple-top .name { font-family: "Spectral", serif; font-weight: 500; font-size: 1.2rem; }
-.simple-hero { padding: 66px 0 44px; }
+.simple-hero { display: flex; align-items: center; gap: 48px; padding: 56px 0 46px; }
+.simple-hero .hero-text { flex: 1 1 360px; }
+.simple-hero .photo-ph { flex: 0 0 240px; width: 240px; aspect-ratio: 4 / 5; margin: 0; }
 .simple-hero .hi { color: var(--sage); margin-bottom: 16px; }
-.simple-hero h1 { font-family: "Spectral", serif; font-weight: 500; font-size: clamp(2.2rem, 6vw, 3.5rem); line-height: 1.06; letter-spacing: -0.02em; }
+.simple-hero h1 { font-family: "Spectral", serif; font-weight: 500; font-size: clamp(2.4rem, 5.2vw, 4.2rem); line-height: 1.04; letter-spacing: -0.02em; }
 .simple-hero h1 em { font-style: italic; font-weight: 400; color: var(--lav); }
 .simple-hero p { color: var(--muted); margin-top: 20px; font-size: 1.13rem; max-width: 50ch; }
 .simple-hero .actions { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
@@ -318,6 +320,16 @@ form button:hover { background: var(--sage-700); }
 .photo-ph .mono { font-family: "Spectral", serif; font-size: 2rem; color: var(--sage); opacity: 0.55; }
 .photo-ph .hint { color: var(--muted); font-size: 0.78rem; }
 .role-line { color: var(--sage); font-weight: 600; font-size: 0.98rem; margin-top: 14px; }
+.contact-sec { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 44px; }
+.contact-sec h2 { font-family: "Spectral", serif; font-weight: 500; font-size: clamp(1.7rem, 3.6vw, 2.4rem); letter-spacing: -0.01em; }
+.contact-sec h2 em { font-style: italic; font-weight: 400; color: var(--lav); }
+.contact-sec .csub { color: var(--muted); margin: 10px 0 28px; max-width: 56ch; }
+.contact-grid2 { display: grid; grid-template-columns: 0.72fr 1.28fr; gap: 44px; align-items: start; }
+@media (max-width: 720px) {
+  .simple-hero { flex-direction: column-reverse; align-items: flex-start; gap: 28px; padding-top: 38px; }
+  .simple-hero .photo-ph { flex-basis: auto; width: 150px; }
+  .contact-grid2 { grid-template-columns: 1fr; gap: 26px; }
+}
 
 .acc { border-top: 1px solid var(--line); }
 .acc details { border-bottom: 1px solid var(--line); }
