@@ -302,3 +302,48 @@ form button:hover { background: var(--sage-700); }
   .trow { grid-template-columns: 1fr; gap: 10px; padding: 28px 0; }
   .trow .tprice { text-align: left; }
 }
+
+/* ---------- SIMPLE / ACCORDION HOME ---------- */
+.simple { max-width: 768px; margin: 0 auto; padding: 0 28px 70px; }
+.simple-top { display: flex; align-items: center; gap: 11px; padding: 32px 0 0; }
+.simple-top svg { width: 22px; height: 28px; }
+.simple-top .name { font-family: "Spectral", serif; font-weight: 500; font-size: 1.2rem; }
+.simple-hero { padding: 66px 0 44px; }
+.simple-hero .hi { color: var(--sage); margin-bottom: 16px; }
+.simple-hero h1 { font-family: "Spectral", serif; font-weight: 500; font-size: clamp(2.2rem, 6vw, 3.5rem); line-height: 1.06; letter-spacing: -0.02em; }
+.simple-hero h1 em { font-style: italic; font-weight: 400; color: var(--lav); }
+.simple-hero p { color: var(--muted); margin-top: 20px; font-size: 1.13rem; max-width: 50ch; }
+.simple-hero .actions { margin-top: 28px; display: flex; gap: 14px; flex-wrap: wrap; }
+
+.acc { border-top: 1px solid var(--line); }
+.acc details { border-bottom: 1px solid var(--line); }
+.acc summary { list-style: none; cursor: pointer; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; gap: 18px; }
+.acc summary::-webkit-details-marker { display: none; }
+.acc .sleft { display: flex; align-items: baseline; gap: 16px; }
+.acc .snum { font-family: "Spectral", serif; font-style: italic; color: var(--sage); font-size: 0.95rem; }
+.acc .stitle { font-family: "Spectral", serif; font-weight: 500; font-size: clamp(1.35rem, 3.4vw, 1.85rem); letter-spacing: -0.01em; color: var(--ink); transition: color .2s ease; }
+.acc summary:hover .stitle { color: var(--sage-700); }
+.acc details[open] .stitle { color: var(--lav); }
+.acc .plus { position: relative; width: 20px; height: 20px; flex: none; }
+.acc .plus::before, .acc .plus::after { content: ""; position: absolute; background: var(--sage); border-radius: 2px; }
+.acc .plus::before { width: 16px; height: 2px; top: 9px; left: 2px; }
+.acc .plus::after { width: 2px; height: 16px; left: 9px; top: 2px; transition: transform .25s ease; }
+.acc details[open] .plus::after { transform: scaleY(0); }
+.acc-body { padding: 2px 0 36px; }
+.acc-body > *:first-child { margin-top: 0; }
+.acc-body .about-lead { font-size: clamp(1.25rem,2.2vw,1.55rem); }
+.acc-cta { margin-top: 26px; }
+
+.wlist article { padding: 16px 0; border-bottom: 1px solid var(--line); }
+.wlist article:first-child { padding-top: 0; }
+.wlist h5 { font-family: "Spectral", serif; font-weight: 500; font-size: 1.2rem; margin-bottom: 4px; }
+.wlist p { color: var(--muted); font-size: 0.94rem; }
+.wlist .meta-tag { font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--lav-700); margin-top: 6px; display: inline-block; }
+.wlist h4 { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--sage); font-weight: 600; margin: 28px 0 8px; }
+.wlist .reslink { display: block; padding: 13px 0; border-bottom: 1px solid var(--line); }
+.wlist .reslink:last-child { border-bottom: none; }
+.wlist .reslink b { font-weight: 500; }
+.wlist .reslink span { display: block; color: var(--muted); font-size: 0.88rem; margin-top: 2px; }
+
+.simple-foot { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 26px; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; color: var(--muted); font-size: 0.9rem; }
+.simple-foot a { color: var(--ink); }
