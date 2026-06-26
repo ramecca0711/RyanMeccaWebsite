@@ -3,7 +3,7 @@
     { href: "about.html", n: "01", label: "About" },
     { href: "approach.html", n: "02", label: "Approach" },
     { href: "work.html", n: "03", label: "Work" },
-    { href: "services.html", n: "04", label: "Services" },
+    { href: "services.html", n: "04", label: "Consulting" },
     { href: "writing.html", n: "05", label: "Writing" },
     { href: "contact.html", n: "06", label: "Contact" }
   ];
