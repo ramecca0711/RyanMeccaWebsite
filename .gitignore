@@ -3,3 +3,5 @@ node_modules/
 .vercel
 *.log
 .env*
+qr-ryanmecca.png
+qr-ryanmecca.svg
