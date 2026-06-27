@@ -336,6 +336,7 @@ form button:hover { background: var(--sage-700); }
 .atable .arow:last-child { border-bottom: 1px solid var(--line); }
 .atable .ak { font-size: 0.68rem; letter-spacing: 0.13em; text-transform: uppercase; color: var(--sage); font-weight: 600; padding-top: 3px; }
 .atable .av { color: var(--ink); font-size: 0.9rem; line-height: 1.45; }
+.atable .av .sub { display: block; color: var(--muted); font-size: 0.86rem; margin-top: 3px; line-height: 1.45; }
 .exp { margin-top: 38px; border-top: 1px solid var(--line); padding-top: 30px; }
 .exp .egroup { margin-bottom: 18px; }
 .exp-cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 28px; }
