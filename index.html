@@ -41,6 +41,39 @@
       <p>I believe the organizations that succeed won't be the ones chasing every new tool. They'll be the ones
       that combine proven operational principles with emerging technologies to solve meaningful problems, improve
       decision-making, and create lasting value.</p>
+
+      <div class="exp">
+        <p class="egroup">Experience</p>
+        <div class="exp-cols">
+          <div class="exp-col">
+            <h4>Strategy &amp; Operations</h4>
+            <ul>
+              <li>Operational reviews</li>
+              <li>Process improvement</li>
+              <li>Growth strategy</li>
+              <li>Org &amp; workflow design</li>
+            </ul>
+          </div>
+          <div class="exp-col">
+            <h4>Data &amp; Analytics</h4>
+            <ul>
+              <li>Dashboards &amp; reporting</li>
+              <li>KPI frameworks</li>
+              <li>Financial &amp; operational modeling</li>
+              <li>Decision support</li>
+            </ul>
+          </div>
+          <div class="exp-col">
+            <h4>AI &amp; Automation</h4>
+            <ul>
+              <li>AI-enabled workflows</li>
+              <li>Process automation</li>
+              <li>Knowledge systems</li>
+              <li>AI enablement &amp; training</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
     <aside class="split-right">
@@ -56,7 +89,7 @@
             <div class="av">BS Industrial Engineering, Georgia Tech. Dual concentration in Supply Chain and Economic &amp; Financial Systems; minor in Business &amp; Technology via the Denning T&amp;M Program.</div>
           </div>
           <div class="arow">
-            <div class="ak">Experience</div>
+            <div class="ak">Career</div>
             <div class="av">Growth Operations Manager at an emerging startup. Five years consulting with 20+ Fortune 500 clients, plus local Austin consulting.</div>
           </div>
           <div class="arow">
@@ -87,11 +120,16 @@
         <span class="label" style="color:var(--muted);display:block;margin:16px 0 6px">Phone</span>
         <a href="tel:+17065738225">(706) 573-8225</a>
       </div>
-      <form id="contactForm">
-        <div class="field"><label class="label" for="name">Name</label><input type="text" id="name" name="name" required placeholder="Your name" /></div>
-        <div class="field"><label class="label" for="message">What can I help you with?</label><textarea id="message" name="message" required placeholder="A sentence or two about your business and what you're looking for."></textarea></div>
+      <form id="contactForm" action="https://formsubmit.co/ramecca0711@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New inquiry from ryanmecca.com" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" />
+        <div class="field"><label class="label" for="name">Name</label><input type="text" id="name" name="Name" required placeholder="Your name" /></div>
+        <div class="field"><label class="label" for="contact">Preferred contact</label><input type="text" id="contact" name="Preferred contact" required placeholder="Email or phone" /></div>
+        <div class="field"><label class="label" for="message">What can I help you with?</label><textarea id="message" name="What can I help you with" required placeholder="A sentence or two about your business and what you're looking for."></textarea></div>
         <button type="submit">Send message</button>
-        <p class="form-note">Opens your email app with the message ready to send.</p>
+        <p class="form-note">Sends straight to Ryan's inbox.</p>
       </form>
     </div>
   </section>
@@ -104,14 +142,6 @@
 </div>
 
 <script>
-  var form = document.getElementById('contactForm');
-  if (form) form.addEventListener('submit', function (ev) {
-    ev.preventDefault();
-    var f = ev.target;
-    var subject = encodeURIComponent('Website inquiry from ' + f.name.value.trim());
-    var body = encodeURIComponent('Name: ' + f.name.value.trim() + '\n\n' + f.message.value.trim());
-    window.location.href = 'mailto:ramecca0711@gmail.com?subject=' + subject + '&body=' + body;
-  });
   document.querySelectorAll('a[href^="#"]').forEach(function (a) {
     a.addEventListener('click', function (e) {
       var el = document.querySelector(this.getAttribute('href'));
