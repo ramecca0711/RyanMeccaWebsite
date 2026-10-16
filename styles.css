@@ -346,6 +346,8 @@ form button:hover { background: var(--sage-700); }
 .photo-ph { width: 150px; aspect-ratio: 1; border-radius: 22px; background: linear-gradient(155deg, var(--paper), var(--lav-soft)); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; box-shadow: 0 18px 40px rgba(24,24,27,0.08); margin-bottom: 30px; }
 .photo-ph .mono { font-family: "Spectral", serif; font-size: 2rem; color: var(--sage); opacity: 0.55; }
 .photo-ph .hint { color: var(--muted); font-size: 0.78rem; }
+.split-photo.headshot { border-radius: 22px; overflow: hidden; box-shadow: 0 18px 40px rgba(24,24,27,0.10); margin-bottom: 30px; }
+.split-photo.headshot img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .role-line { color: var(--sage); font-weight: 600; font-size: 0.98rem; margin-top: 14px; }
 .contact-sec { border-top: 1px solid var(--line); margin-top: 6px; padding-top: 44px; }
 .contact-sec h2 { font-family: "Spectral", serif; font-weight: 500; font-size: clamp(1.7rem, 3.6vw, 2.4rem); letter-spacing: -0.01em; }
