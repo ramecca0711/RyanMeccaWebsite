@@ -320,7 +320,7 @@ form button:hover { background: var(--sage-700); }
 .split-left .ls-lead { font-family: "Spectral", serif; font-weight: 400; font-size: clamp(1.5rem, 2.6vw, 2.05rem); line-height: 1.36; letter-spacing: -0.012em; color: var(--ink); }
 .split-left .ls-lead em { font-style: italic; color: var(--lav); }
 .split-left p:not(.ls-lead) { color: var(--muted); font-size: clamp(1.06rem, 1.5vw, 1.2rem); line-height: 1.56; margin-top: 20px; }
-.split-right .split-photo { width: 100%; max-width: 340px; aspect-ratio: 4 / 5; margin: 0 0 26px; }
+.split-right .split-photo { width: 100%; max-width: 210px; aspect-ratio: 4 / 5; margin: 0 0 26px; }
 .about-block .ab-head { font-family: "Spectral", serif; font-weight: 500; font-size: 1.55rem; letter-spacing: -0.01em; margin-bottom: 10px; }
 .about-block .ab-lead { font-family: "Spectral", serif; font-weight: 400; font-size: 1.14rem; line-height: 1.45; color: var(--ink); margin-bottom: 18px; }
 .about-block .svc-points { margin: 4px 0 6px; }
@@ -477,4 +477,9 @@ a.piece { text-decoration: none; color: inherit; cursor: pointer; }
 a.piece:hover .pl-name { color: var(--lav); }
 .placard .pl-visit { display: inline-block; margin-top: 10px; font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--sage-700); font-weight: 600; opacity: 0; transition: opacity .2s ease; }
 a.piece:hover .pl-visit { opacity: 1; }
+.fprev.nelly { border-color: #9c6b74; }
+.fprev.nelly .art { background: linear-gradient(155deg, #f7ecef, #e6c6d0); box-shadow: inset 0 0 0 1px rgba(156,107,116,0.2); }
+.fprev.nelly .pmono { font-family: "Pacifico", cursive; color: #b0697a; opacity: 0.85; font-size: 1.75rem; }
+.placard.nelly .pl-name { font-family: "Pacifico", cursive; font-weight: 400; color: #a85f6f; font-size: 1.3rem; }
+.placard.nelly .pl-wip { color: #9c5566; background: #f4dde4; }
 @media (max-width: 560px) { .gallery { grid-template-columns: 1fr; } }
